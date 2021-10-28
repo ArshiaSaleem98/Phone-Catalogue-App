@@ -55,9 +55,8 @@ Following is the docker-compose.yml file To run my application. It has three ser
 
 ### Prerequisites
 
-- Create an account: https://console.cloud.google.com/ .
-- Create a project
-- Download cloud sdk: https://cloud.google.com/sdk/docs/install
+- Need to have an gcp(Google Cloud Platform) account and a project : https://console.cloud.google.com/
+- Cloud sdk downloaded into your computer.For more info:  https://cloud.google.com/sdk/docs/install
 
 ### Set Up
 
