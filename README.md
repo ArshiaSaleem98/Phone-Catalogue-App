@@ -56,23 +56,41 @@ Following is the docker-compose.yml file to run my application. It has three ser
 ### Prerequisites
 
 - Need to have a gcp (Google Cloud Platform) account and a project : https://console.cloud.google.com/
+<img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139325765-991b77af-0a3f-4c3e-8805-8a5abbfe5e86.png">  
 - Cloud sdk downloaded into your computer.For more info:  https://cloud.google.com/sdk/docs/install
 - Clone the repository 
 
 ### Set Up
 
 - Open the terminal and type the command: `gcloud init` then select a new configuration option. 
-- Choose a name for your project
-- Select your account and pick the project. 
-- Open the repository into an editor then go to react folder, and remove the red highlighted files and change the name of green highlighted files into dockerfile and nginx.conf respectively ,as the other files are to running the app on localhost.
-- Select the project that you have in gcp and create a cloud sql, make a database,go to overview copy the public ip address.
+<img width="573" alt="Screenshot 2021-10-28 at 18 40 04" src="https://user-images.githubusercontent.com/45390300/139326349-63916f7a-2311-4fe8-b8e3-ba6ef121a86e.png">- Choose a name for your project
+- Select your account and pick the project.  
+<img width="573" alt="Screenshot 2021-10-28 at 18 42 18" src="https://user-images.githubusercontent.com/45390300/139326411-074e300a-9781-4836-858f-21e0a8dbc1ab.png">
+- Open the repository into an editor then go to react folder, and remove the red highlighted files and change the name of green highlighted files into dockerfile and nginx.conf respectively ,as the other files are to run the app on localhost.  
+<img width="573" alt="Screenshot 2021-10-28 at 18 56 02" src="https://user-images.githubusercontent.com/45390300/139326548-a332fab0-51ec-4f05-a765-81ca9280c165.png"> 
+- Select the project that you have in gcp and create a cloud sql, make a database,go to overview copy the public ip address.   
+<img width="573" alt="Screenshot 2021-10-28 at 19 02 01" src="https://user-images.githubusercontent.com/45390300/139326735-6afa3f07-1c5a-4325-801a-cd1c7797028e.png">
+
 
 ### Creating an Image container for Back-End 
 
-- Open the springboot folder into an editor and change the *application.properties* configuration accordingly. 
-- Change the directory to springboot folder 
-- Type the command `gcloud builds submit --tag eu.gcr.io/test-react-springboot/phone-catalogue-springboot-back:latest` where *test-react-springboot* is the gcp project id.
-- Now go back to cloud run , create a service ,select the image created for Back-End and set the configuration as shown in the following image.
+- Open the springboot folder into an editor and change the *application.properties* configuration accordingly.  
+<img width="573" alt="Screenshot 2021-10-28 at 19 03 21" src="https://user-images.githubusercontent.com/45390300/139326795-a1dbf2c7-85d0-46b1-9d36-b9d08e6e4a5d.png">  
+- Change the directory to springboot folder  
+- Type the command `gcloud builds submit --tag eu.gcr.io/test-react-springboot/phone-catalogue-springboot-back:latest` where *test-react-springboot* is the gcp project id. 
+<img width="573" alt="Screenshot 2021-10-28 at 20 36 55" src="https://user-images.githubusercontent.com/45390300/139326914-d62d7938-6b8d-4b3c-9657-8ed5a7bbf191.png">  
+- Now go back to cloud run , create a service ,select the image created for Back-End and set the configuration as shown in the following images.
+
+
+
+<img width="573" alt="Screenshot 2021-10-28 at 21 12 34" src="https://user-images.githubusercontent.com/45390300/139327145-c32c104d-eb68-4973-a236-264670cf176f.png">  
+
+<img width="573" alt="Screenshot 2021-10-28 at 21 15 28" src="https://user-images.githubusercontent.com/45390300/139327200-bd6195f7-8ca7-4aa6-9056-f0823d256ccd.png">  
+
+<img width="573" alt="Screenshot 2021-10-28 at 21 16 24" src="https://user-images.githubusercontent.com/45390300/139327215-7086594f-362a-48e6-8f63-05eb9c680ab7.png">  
+
+<img width="573" alt="Screenshot 2021-10-28 at 21 16 40" src="https://user-images.githubusercontent.com/45390300/139327231-6d968108-856c-4f30-8464-cb16a4e0f1c4.png">  
+
 
 
 
