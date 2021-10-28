@@ -1,0 +1,5 @@
+com/example/demo/controller/PhoneController.class
+com/example/demo/repository/PhoneRepository.class
+com/example/demo/Service/PhoneService.class
+com/example/demo/PhoneCatalogsAppApplication.class
+com/example/demo/model/Phone.class
