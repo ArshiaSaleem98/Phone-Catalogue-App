@@ -1,4 +1,6 @@
 # Phone-Catalogue-App
+
+### Direct Access to web (Deployed on Google Cloud Platform): https://phone-catalogue-react-front-sd2e33dvpq-uc.a.run.app/
 It’s a responsive web application about phone catalogues. All the phones will be loaded from database and the user will be able to see all the details.
 ## Front-End 
 To create Front-end part, i have used [React](https://reactjs.org/) to make the web work efficiently while updating and rendering any components when the data will change.
@@ -78,7 +80,7 @@ Following is the docker-compose.yml file to run my application. It has three ser
 <img width="573" alt="Screenshot 2021-10-28 at 18 56 02" src="https://user-images.githubusercontent.com/45390300/139326548-a332fab0-51ec-4f05-a765-81ca9280c165.png">   
 
 
-- Create a mySql database on any server or any available service , in my case i have used [remotemysql](https://remotemysql.com/)
+- Create a mySql database on any server or any available service , in my case i have used [remotemysql](https://remotemysql.com/) that is easy to use for testing purpose ,but  still not recommended , you can use services like Cloud Sql instead for serious deployments.
 
 
 ### Creating an Image container for Back-End 
@@ -116,7 +118,7 @@ After deploying the back-end image, a base url is generated for our Rest api as 
 - Type the command `gcloud builds submit --tag eu.gcr.io/test-react-springboot/phone-catalogue-react-front:latest` where *test-react-springboot* is the gcp project id. 
 - Now go back to cloud run , create a service ,select the image created for Front-End and set the configuration same as back-end as we have seen earlier. 
 
-#### Deployment of Back-End Image 
+#### Deployment of Front-End Image 
 
 After deploying the Front-end image, a base url is generated for our React app ,which can be used to access the app:
 
