@@ -28,15 +28,26 @@ To create and build the docker images ,i have created two DockerFiles ,one for F
 As the frontend of the application is written in React. so i deployed the React app behind an nginx server.  
 Following is the Dockerfile for the React app (It uses nginx.conf):  
 
-<img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139263829-868d5baa-a73e-4519-9fcd-4a2097a5e1e6.PNG">
+<img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139269613-dc281ca6-cd85-47ff-a2e9-176f37f53350.PNG">
 
 ### DockerFile for the SpringBoot Application:  
-<img width="573" alt="dockerfilespring" src="https://user-images.githubusercontent.com/45390300/139263812-bdfa167f-94a2-401a-bac0-4d579e02e576.PNG">
+<img width="573" alt="dockerfilespring" src="https://user-images.githubusercontent.com/45390300/139269610-72d0c2d6-ef76-4836-8956-6213561deac1.PNG">
 
 ### Creating the docker-compose.yml configuration
 To deploy my docker compose, i created a docker-compose.yml file that contains configuration for all the services in my entire stack.
 
-Following is the docker-compose.yml file ro run my application. It has three services: app-server, app-client, and db. The app-server contains configuration for the backend app ,while the app-client contains configuration for the react app, and db is for the mysql database.
+Following is the docker-compose.yml file To run my application. It has three services: app-server, app-client, and db. The app-server contains configuration for the backend app ,while the app-client contains configuration for the react app, and db is for the mysql database.  
+
+<img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139268996-f8046c77-fb3d-4848-b5f3-16c1ca9f8ee2.png">
+
+### Running the complete Stack:
+To run the entire application use the Command:
+`docker-compose up`  
+
+
+
+
+
 
 ## Screenshots  
 ### Home Page  
