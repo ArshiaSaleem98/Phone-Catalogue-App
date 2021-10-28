@@ -21,6 +21,7 @@ Component         | Technology Used
 
 - Clone the Repository into your Computer.  
 - Install the docker from https://docs.docker.com/get-docker/ .
+- Access the Application:http://localhost:9090/
 
 ### Deployment 
 To create and build the docker images ,i have created two DockerFiles ,one for Frontend and other for Backend.
