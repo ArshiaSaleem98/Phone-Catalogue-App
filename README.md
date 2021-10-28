@@ -19,21 +19,25 @@ Component         | Technology Used
 
 ### Prerequisites
 
-Clone the Repository into your Computer.  
-Install the docker from https://docs.docker.com/get-docker/ .
+- Clone the Repository into your Computer.  
+- Install the docker from https://docs.docker.com/get-docker/ .
 
 ### Deployment 
 To create and build the docker images ,i have created two DockerFiles ,one for Frontend and other for Backend.
-### DockerFile for the React Application:  
+### DockerFile for the React Application   
 As the frontend of the application is written in React. so i deployed the React app behind an nginx server.  
 Following is the Dockerfile for the React app (It uses nginx.conf):  
 
 <img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139269613-dc281ca6-cd85-47ff-a2e9-176f37f53350.PNG">
 
-### DockerFile for the SpringBoot Application:  
+### DockerFile for the SpringBoot Application  
+
+Here is the Dockerfile for the spring boot app:  
+
 <img width="573" alt="dockerfilespring" src="https://user-images.githubusercontent.com/45390300/139269610-72d0c2d6-ef76-4836-8956-6213561deac1.PNG">
 
 ### Creating the docker-compose.yml configuration
+
 To deploy my docker compose, i created a docker-compose.yml file that contains configuration for all the services in my entire stack.
 
 Following is the docker-compose.yml file To run my application. It has three services: app-server, app-client, and db. The app-server contains configuration for the backend app ,while the app-client contains configuration for the react app, and db is for the mysql database.  
@@ -41,8 +45,9 @@ Following is the docker-compose.yml file To run my application. It has three ser
 <img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139268996-f8046c77-fb3d-4848-b5f3-16c1ca9f8ee2.png">
 
 ### Running the complete Stack:
-To run the entire application use the Command:
-`docker-compose up`  
+
+- Open the Project that you have cloned into an IDE  
+- Run the app by using the following Command:`docker-compose up`  
 
 
 
