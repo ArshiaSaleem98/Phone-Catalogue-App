@@ -1,9 +1,9 @@
 # Phone-Catalogue-App
-It’s a responsive web application about phone catalogues. All the phones will be loaded from database and the user will able to see all the details.
+It’s a responsive web application about phone catalogues. All the phones will be loaded from database and the user will be able to see all the details.
 ## Front-End 
 To create Front-end part, i have used [React](https://reactjs.org/) to make the web work efficiently while updating and rendering any components when the data will change.
 ## Back-End 
-For Back-End to create and implement Rest API (that has one ending-point *GET*), i have decided to used [Spring boot](https://spring.io/projects/spring-boot) ,basically it's a Java-based framework , as it makes the services to develop and deploy independently.
+For Back-End, i have decided to used [Spring boot](https://spring.io/projects/spring-boot) to create and implement Rest API (that has one ending-point *GET*),basically it's a Java-based framework , as it makes the services to develop and deploy independently.
 
 ## Tecnology Stack
 
@@ -40,7 +40,7 @@ Here is the Dockerfile for the spring boot app:
 
 To deploy my docker compose, i created a docker-compose.yml file that contains configuration for all the services in my entire stack.
 
-Following is the docker-compose.yml file To run my application. It has three services: app-server, app-client, and db. The app-server contains configuration for the backend app ,while the app-client contains configuration for the react app, and db is for the mysql database.  
+Following is the docker-compose.yml file to run my application. It has three services: app-server, app-client, and db. The app-server contains configuration for the backend app ,while the app-client contains configuration for the react app, and db is for mysql database.  
 
 <img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139268996-f8046c77-fb3d-4848-b5f3-16c1ca9f8ee2.png">
 
@@ -55,14 +55,24 @@ Following is the docker-compose.yml file To run my application. It has three ser
 
 ### Prerequisites
 
-- Need to have an gcp(Google Cloud Platform) account and a project : https://console.cloud.google.com/
+- Need to have a gcp (Google Cloud Platform) account and a project : https://console.cloud.google.com/
 - Cloud sdk downloaded into your computer.For more info:  https://cloud.google.com/sdk/docs/install
+- Clone the repository 
 
 ### Set Up
 
-- Open the terminal type the command: `gcloud init` then select a new configuration option. 
+- Open the terminal and type the command: `gcloud init` then select a new configuration option. 
 - Choose a name for your project
 - Select your account and pick the project. 
+- Open the repository into an editor then go to react folder, and remove the red highlighted files and change the name of green highlighted files into dockerfile and nginx.conf respectively ,as the other files are to running the app on localhost.
+- Select the project that you have in gcp and create a cloud sql, make a database,go to overview copy the public ip address.
+
+### Creating an Image container for Back-End 
+
+- Open the springboot folder into an editor and change the *application.properties* configuration accordingly. 
+- Change the directory to springboot folder 
+- Type the command `gcloud builds submit --tag eu.gcr.io/test-react-springboot/phone-catalogue-springboot-back:latest` where *test-react-springboot* is the gcp project id.
+- Now go back to cloud run , create a service ,select the image created for Back-End and set the configuration as shown in the following image.
 
 
 
