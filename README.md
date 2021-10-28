@@ -85,7 +85,7 @@ Following is the docker-compose.yml file to run my application. It has three ser
 
 ### Creating an Image container for Back-End 
 
-- Open the springboot folder into an editor and change the *application.properties* configuration accordingly.    
+- Open the springboot folder into an editor , change the *application.properties* credentials accordingly and build the project again.    
 <img width="573" alt="Screenshot 2021-10-28 at 19 03 21" src="https://user-images.githubusercontent.com/45390300/139326795-a1dbf2c7-85d0-46b1-9d36-b9d08e6e4a5d.png">
 
 
