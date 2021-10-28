@@ -1,4 +1,4 @@
-# Phone-Catalog-App
+# Phone-Catalogue-App
 It’s a responsive web application about phone catalogs. All the phones will be loaded from database and the user will able to see the details related to the phone.
 ## Front-End 
 To create Front-end part, i have used [React](https://reactjs.org/) to make the web work efficiently while updating and rendering any components when the data will change.
