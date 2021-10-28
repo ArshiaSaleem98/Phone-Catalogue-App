@@ -53,7 +53,7 @@ Following is the docker-compose.yml file to run my application. It has three ser
 - Access the Application:http://localhost:9090/
 
 
-## Running the Application on Google Cloud Platform using Cloud Run  
+## Running the Application on Google Cloud Platform using Cloud Run (serverless) 
 
 ### Prerequisites
 
