@@ -19,10 +19,11 @@ For Back-End to create and implement Rest API (that has one ending-point *GET*),
 
 ## Deployment 
 To create and build the docker images i have created two DockerFiles ,one for Frontend and other for backend.
-### DockerFile for the React Application:
+### DockerFile for the React Application:  
+<img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139263829-868d5baa-a73e-4519-9fcd-4a2097a5e1e6.PNG">
 
+### DockerFile for the SpringBoot Application:  
 
-### DockerFile for the SpringBoot Application
 
 ## Prerequisites
 
