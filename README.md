@@ -28,6 +28,18 @@ cd blog-backend
 Frontend
 Go to your project folder from your terminal
 cd blog-frontend
-Run: npm install or yarn install
+Run: npm install or yarn install.  
+
+## Screenshots  
+### Home Page  
+![homepage](https://user-images.githubusercontent.com/45390300/139253553-7feacbd8-eb48-4339-8d35-2c34c972d44c.png)
+
+### Phone Detail Page 
+![productPage](https://user-images.githubusercontent.com/45390300/139254259-0a6b0093-f2a0-4661-88b1-3405855d59d4.png)
+
+### Contact Page 
+![contactpage](https://user-images.githubusercontent.com/45390300/139254977-23e1c94d-3d09-46cf-a185-1b2fb6045c33.png)
+
+
 
 
