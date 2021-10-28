@@ -7,8 +7,8 @@ For Back-End to create and implement Rest API (that has one ending-point *GET*),
 
 ## Tecnology Stack
 
-| Component | Tecnology Used|
-|  ------------- |------------- | 
+Component         | Technology Used
+---               | ---
 | Frontend   | React | 
 | BackEnd | Spring-Boot,Java  | 
 | Database   | MySql | 
