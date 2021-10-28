@@ -21,7 +21,6 @@ Component         | Technology Used
 
 - Clone the Repository into your Computer.  
 - Install the docker from https://docs.docker.com/get-docker/ .
-- Access the Application:http://localhost:9090/
 
 ### Deployment 
 To create and build the docker images ,i have created two DockerFiles ,one for Frontend and other for Backend.
@@ -49,8 +48,26 @@ Following is the docker-compose.yml file To run my application. It has three ser
 
 - Open the Project that you have cloned into an IDE  
 - Run the app by using the following Command:`docker-compose up`  
+- Access the Application:http://localhost:9090/
 
-## Running the Application on Google Cloud Platform using Cloud Run 
+
+## Running the Application on Google Cloud Platform using Cloud Run  
+
+### Prerequisites
+
+- Create an account: https://console.cloud.google.com/ .
+- Create a project
+- Download cloud sdk: https://cloud.google.com/sdk/docs/install
+
+### Set Up
+
+- Open the terminal type the command: `gcloud init` then select a new configuration option. 
+- Choose a name for your project
+- Select your account and pick the project. 
+
+
+
+
 
 
 
