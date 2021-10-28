@@ -78,9 +78,7 @@ Following is the docker-compose.yml file to run my application. It has three ser
 <img width="573" alt="Screenshot 2021-10-28 at 18 56 02" src="https://user-images.githubusercontent.com/45390300/139326548-a332fab0-51ec-4f05-a765-81ca9280c165.png">   
 
 
-- Select the project that you have in gcp and create a cloud sql, make a database,go to overview copy the public ip address. 
-   
-<img width="573" alt="Screenshot 2021-10-28 at 19 02 01" src="https://user-images.githubusercontent.com/45390300/139326735-6afa3f07-1c5a-4325-801a-cd1c7797028e.png">  
+- Create a mySql database on any server or any available service , in my case i have used [remotemysql](https://remotemysql.com/)
 
 
 ### Creating an Image container for Back-End 
@@ -94,6 +92,27 @@ Following is the docker-compose.yml file to run my application. It has three ser
 <img width="573" alt="Screenshot 2021-10-28 at 20 36 55" src="https://user-images.githubusercontent.com/45390300/139326914-d62d7938-6b8d-4b3c-9657-8ed5a7bbf191.png">    
 
 - Now go back to cloud run , create a service ,select the image created for Back-End and set the configuration as shown in the following images.  
+
+#### Deployment of Back-End Image 
+
+After deploying the back-end image, a base url is generated for our Rest api as seen in the following image:  
+
+<img width="573" alt="imgaeback" src="https://user-images.githubusercontent.com/45390300/139349136-7e8a77b5-6898-4736-aa89-3af44bf46797.PNG">
+
+
+### Creating an Image container for Front-End 
+
+- Open the react folder into an editor , change all http request url from *http://localhost:8080* to the url from last step.
+- Type the command `gcloud builds submit --tag eu.gcr.io/test-react-springboot/phone-catalogue-react-front:latest` where *test-react-springboot* is the gcp project id. 
+- Now go back to cloud run , create a service ,select the image created for Front-End and set the configuration same as back-end as we have seen earlier. 
+
+#### Deployment of Back-End Image 
+
+After deploying the Front-end image, a base url is generated for our React app ,which can be used to access the app:
+
+
+
+
 
 
 
