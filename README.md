@@ -3,7 +3,7 @@ It’s a responsive web application about phone catalogues. All the phones will 
 ## Front-End 
 To create Front-end part, i have used [React](https://reactjs.org/) to make the web work efficiently while updating and rendering any components when the data will change.
 ## Back-End 
-For Back-End to create and implement Rest API (that has one ending-point Get), i have decided to used [Spring boot](https://spring.io/projects/spring-boot) ,basically it's a Java-based framework , as it makes the services to develop and deploy independently.
+For Back-End to create and implement Rest API (that has one ending-point *GET*), i have decided to used [Spring boot](https://spring.io/projects/spring-boot) ,basically it's a Java-based framework , as it makes the services to develop and deploy independently.
 
 ## Tecnology Stack
 
@@ -15,11 +15,16 @@ For Back-End to create and implement Rest API (that has one ending-point Get), i
 | Persistence   | JPA  | 
 
 ## Getting Started
+## Deployment 
+### Running the Application on Localhost using Docker-Compose
+To run the aplication on localhost, i have created two DockerFiles ,one for Frontend and other for backend.
+### DockerFile for the React Application
+
+### DockerFile for the SpringBoot Application
+
 ## Prerequisites
-### Front-End
-Install Java 8. 
-Install Node.js from the Node.js website.  
-Clone the repo git clone.
+
+To 
 
 ### Backend
 Go to your project folder from your terminal
