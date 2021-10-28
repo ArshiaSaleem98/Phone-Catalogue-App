@@ -15,10 +15,12 @@ For Back-End to create and implement Rest API (that has one ending-point *GET*),
 | Persistence   | JPA  | 
 
 ## Getting Started
+## Running the Application on Localhost using Docker-Compose
+
 ## Deployment 
-### Running the Application on Localhost using Docker-Compose
-To run the aplication on localhost, i have created two DockerFiles ,one for Frontend and other for backend.
-### DockerFile for the React Application
+To create and build the docker images i have created two DockerFiles ,one for Frontend and other for backend.
+### DockerFile for the React Application:
+
 
 ### DockerFile for the SpringBoot Application
 
