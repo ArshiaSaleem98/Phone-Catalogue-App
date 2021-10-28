@@ -56,7 +56,7 @@ Following is the docker-compose.yml file to run my application. It has three ser
 ### Prerequisites
 
 - Need to have a gcp (Google Cloud Platform) account and a project : https://console.cloud.google.com/
-<img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139325765-991b77af-0a3f-4c3e-8805-8a5abbfe5e86.png">    
+<img width="573" alt="dockerfilesreact" src="https://user-images.githubusercontent.com/45390300/139325765-991b77af-0a3f-4c3e-8805-8a5abbfe5e86.png">
 - Cloud sdk downloaded into your computer.For more info:  https://cloud.google.com/sdk/docs/install
 - Clone the repository 
 
