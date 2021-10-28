@@ -93,6 +93,16 @@ Following is the docker-compose.yml file to run my application. It has three ser
 
 - Now go back to cloud run , create a service ,select the image created for Back-End and set the configuration as shown in the following images.  
 
+<img width="573" alt="Screenshot 2021-10-28 at 21 12 34" src="https://user-images.githubusercontent.com/45390300/139327145-c32c104d-eb68-4973-a236-264670cf176f.png">  
+
+<img width="573" alt="Screenshot 2021-10-28 at 21 15 28" src="https://user-images.githubusercontent.com/45390300/139327200-bd6195f7-8ca7-4aa6-9056-f0823d256ccd.png">  
+
+<img width="573" alt="Screenshot 2021-10-28 at 21 16 24" src="https://user-images.githubusercontent.com/45390300/139327215-7086594f-362a-48e6-8f63-05eb9c680ab7.png">  
+
+<img width="573" alt="Screenshot 2021-10-28 at 21 16 40" src="https://user-images.githubusercontent.com/45390300/139327231-6d968108-856c-4f30-8464-cb16a4e0f1c4.png">
+
+
+
 #### Deployment of Back-End Image 
 
 After deploying the back-end image, a base url is generated for our Rest api as seen in the following image:  
@@ -110,30 +120,9 @@ After deploying the back-end image, a base url is generated for our Rest api as 
 
 After deploying the Front-end image, a base url is generated for our React app ,which can be used to access the app:
 
+<img width="573" alt="imagefront" src="https://user-images.githubusercontent.com/45390300/139350058-51ae4484-220c-43b2-8cac-933a5534dc00.PNG">
 
-
-
-
-
-
-<img width="573" alt="Screenshot 2021-10-28 at 21 12 34" src="https://user-images.githubusercontent.com/45390300/139327145-c32c104d-eb68-4973-a236-264670cf176f.png">  
-
-<img width="573" alt="Screenshot 2021-10-28 at 21 15 28" src="https://user-images.githubusercontent.com/45390300/139327200-bd6195f7-8ca7-4aa6-9056-f0823d256ccd.png">  
-
-<img width="573" alt="Screenshot 2021-10-28 at 21 16 24" src="https://user-images.githubusercontent.com/45390300/139327215-7086594f-362a-48e6-8f63-05eb9c680ab7.png">  
-
-<img width="573" alt="Screenshot 2021-10-28 at 21 16 40" src="https://user-images.githubusercontent.com/45390300/139327231-6d968108-856c-4f30-8464-cb16a4e0f1c4.png">  
-
-
-
-
-
-
-
-
-
-
-
+### Now, you should be able to access the web Successfully!
 
 ## Screenshots  
 ### Home Page  
