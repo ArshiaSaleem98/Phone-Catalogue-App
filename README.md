@@ -49,7 +49,7 @@ Following is the docker-compose.yml file To run my application. It has three ser
 - Open the Project that you have cloned into an IDE  
 - Run the app by using the following Command:`docker-compose up`  
 
-## Running the Application on Google Cloud using Cloud Run 
+## Running the Application on Google Cloud Platform using Cloud Run 
 
 
 
